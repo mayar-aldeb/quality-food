@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البحث عن الوصفات</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <h1>ابحث عن وصفاتك المفضلة</h1>
+    <form action="/" method="post">
+        <label for="healthy">هل تريد وصفات صحية؟</label>
+        <select name="healthy" id="healthy">
+            <option value="1">نعم</option>
+            <option value="0">لا</option>
+        </select>
+
+        <label for="language">اختر اللغة:</label>
+        <select name="language" id="language">
+            <option value="3">العربية</option>
+            <option value="4">English</option>
+        </select>
+
+        <label for="ingredients">ادخل المكونات (مفصولة بفاصلة):</label>
+        <input type="text" name="ingredients" id="ingredients" required>
+
+        <button type="submit">بحث</button>
+    </form>
+
+    {% if meals %}
+        <h2>الوصفات التي تحتوي على جميع المكونات:</h2>
+        <ul>
+            {% for i in range(meals|length) %}
+                <li>
+                    <strong>{{ meals[i] }}</strong>
+                    <p>المكونات: {{ ", ".join(matching_recipes[i]) }}</p>
+                    {% if images[i] %}
+                        <img src="/images/{{ images[i] }}" alt="{{ meals[i] }}">
+                    {% else %}
+                        <p>الصورة غير متوفرة</p>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if found_ingredients %}
+        <h2>الوصفات التي تحتوي على بعض المكونات:</h2>
+        <ul>
+            {% for i in range(found_ingredients|length) %}
+                <li>
+                    <strong>{{ found_ingredients[i] }}</strong>
+                    <p>المكونات المتاحة: {{ ", ".join(matching_recipes[i]) }}</p>
+                    {% if images[i] %}
+                        <img src="/images/{{ images[i] }}" alt="{{ found_ingredients[i] }}">
+                    {% else %}
+                        <p>الصورة غير متوفرة</p>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

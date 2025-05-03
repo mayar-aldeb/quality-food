@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+
+     <!-- meta tags -->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+ 
+     <!-- title -->
+     <title>FoodGuard AI.</title>
+ 
+     <!-- favicon -->
+     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+ 
+     <!-- css -->
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
+     <link rel="stylesheet" href="assets/css/animate.min.css">
+     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+     <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+     <link rel="stylesheet" href="assets/css/nice-select.min.css">
+     <link rel="stylesheet" href="assets/css/style.css">
+
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- ✅ إضافة مكتبة jQuery UI لتحسين AutoComplete -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+
+<body>
+
+ <!-- preloader -->
+ <div class="preloader">
+    <div class="loader-ripple">
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+
+    <!-- header area -->
+    <header class="header">
+
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <div class="row align-items-center">
+                        <!-- Left Section -->
+                        <div class="col-4">
+                            <div class="header-top-left">
+                                <ul class="header-top-list">
+                                    <li><a href="mailto:info@example.com"><i class="far fa-envelope"></i> foodguardai@gmail.com</a></li>
+                                    <li><a href="tel:+21236547898"><i class="far fa-headset"></i> +201202743022</a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <!-- Logo in Center -->
+                        <div class="col-4 text-center">
+                            <div class="header-top-logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/logo.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+        
+                        <!-- Right Section -->
+                        <div class="col-4">
+                            <div class="header-top-right text-end">
+                                <ul class="header-top-list">
+                                    <li>
+                                        <div class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="far fa-globe-americas"></i> EN
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">EN</a>
+                                                <a class="dropdown-item" href="#">FR</a>
+                                                <a class="dropdown-item" href="#">DE</a>
+                                                <a class="dropdown-item" href="#">RU</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="social">
+                                        <div class="header-top-social">
+                                            <span>Follow Us: </span>
+                                            <a href="#"><i class="fab fa-facebook"></i></a>
+                                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- header main navigation -->
+        <div class="main-navigation">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container position-relative">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/logo.png" class="logo-scrolled" alt="logo">
+                    </a>
+                   
+                    <div class="mobile-menu-right">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Services</a>
+                                <ul class="dropdown-menu fade-down">
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5000">Evaluate food quality</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5001">calories calculator</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5010">food suggestions</a></li>
+                                    <!-- <li><a class="dropdown-item" href="index-4.html">Home Demo 04</a></li> -->
+                                </ul>
+                            </li>                            
+                            <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8080">Prices</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5005">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href=" http://127.0.0.1:5006">Contact</a></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main class="main">
+
+        <!-- breadcrumb -->
+        <div class="site-breadcrumb">
+            <div class="site-breadcrumb-bg" style="background: url(assets/img/breadcrumb/99.jpg)"></div>
+            <div class="container">
+                <div class="site-breadcrumb-wrap">
+                    <h4 class="breadcrumb-title">Product prices</h4>
+                    <ul class="breadcrumb-menu">
+                        <li><a href="http://127.0.0.1:5002"><i class="far fa-home"></i> Home</a></li>
+                        <li class="active">Product prices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb end -->
+        <!-- Buttons -->
+        <div class="text-center my-4">
+            <button id="btn-budget" class="btn mx-2" style="background-color: white; color: #28a745; border: 1px solid #28a745;">حساب الميزانية</button>
+            <button id="btn-prices" class="btn mx-2" style="background-color: #28a745; color: white; border: 1px solid #28a745;">الاسعار</button>
+        </div>
+        
+        
+
+        <!-- Budget Input Section (initially hidden) -->
+        <div class="container py-3" id="budget-section" style="display: none; min-height: 80vh;">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+        
+                            <!-- العنوان -->
+                            <h4 class="text-center mb-4">حساب الميزانية</h4>
+        
+                            <!-- اسم المنتج -->
+                            <div class="form-group text-end mb-3" dir="rtl">
+                                <label class="mb-1" style=" color: #000;">اسم المنتج</label>
+                                <input type="text" id="product-name" class="form-control" placeholder="ادخل اسم المنتج">
+                            </div>
+        
+                            <!-- الكمية -->
+                            <div class="form-group text-end mb-3" dir="rtl">
+                                <label class="mb-1" style=" color: #000;">الكمية</label>
+                                <input type="number" id="quantity" class="form-control" placeholder="الكمية">
+                            </div>
+        
+                            <!-- زر الإضافة -->
+                            <div class="form-group text-center mb-4">
+                                <button type="button" id="add-item" class="theme-btn">+</button>
+                            </div>
+        
+                            <!-- قائمة المنتجات -->
+                            <ul id="product-list" class="product-list mb-4"></ul>
+        
+                            <!-- زر الحساب -->
+                            <div class="form-group text-center mb-3">
+                                <button type="button" id="calculate" class="theme-btn">احسب السعر</button>
+                            </div>
+        
+                            <!-- النتيجة -->
+                            <h3 class="total-price text-center">مجموع السعر: <span id="total-price">0</span> جنيه</h3>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        
+        <!-- Prices Section -->
+        <div class="container py-5" id="prices-section">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h4 class="text-center mb-4"> أسعار المنتجات</h4>
+
+                            <!-- ✅ مربع البحث مع AutoComplete -->
+                            <div class="header-middle-search mb-3">
+                                <form action="javascript:void(0);">
+                                    <div class="search-content d-flex">
+                                        <input type="text" id="search-box" class="form-control" placeholder="ابحث عن المنتج...">
+                                        <button type="submit" class="search-btn"><i class="far fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- ✅ جدول صغير لعرض نتائج البحث -->
+                            <div id="search-result-box" class="search-result-box">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>المنتج</th>
+                                            <th>السعر</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="search-result-body"></tbody>
+                                </table>
+                            </div>
+
+                            <div class="text-center mb-3" id="category-buttons"></div>
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>المنتج</th>
+                                            <th>السعر</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="products-table">
+                                        <tr>
+                                            <td colspan="2" class="text-center">جاري تحميل البيانات...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</main>
+
+
+
+<!-- footer area -->
+<footer class="footer-area">
+   
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright-wrap">
+                <div class="row">
+                    <div class="col-12 col-lg-6 align-self-center">
+                        <p class="copyright-text">
+                            &copy; Copyright <span id="date"></span> <a href="#"> FoodGuard AI. </a> All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 align-self-center">
+                        <div class="footer-social">
+                            <span>Follow Us:</span>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    const btnPrices = document.getElementById('btn-prices');
+    const btnBudget = document.getElementById('btn-budget');
+    const pricesSection = document.getElementById('prices-section');
+    const budgetSection = document.getElementById('budget-section');
+
+    const greenStyle = "background-color: #28a745; color: white; border: 1px solid #28a745;";
+    const outlineStyle = "background-color: white; color: #28a745; border: 1px solid #28a745;";
+
+    
+    btnPrices.addEventListener('click', () => {
+        pricesSection.style.display = 'block';
+        budgetSection.style.display = 'none';
+
+        btnPrices.style = greenStyle;
+        btnBudget.style = outlineStyle;
+    });
+
+    btnBudget.addEventListener('click', () => {
+        pricesSection.style.display = 'none';
+        budgetSection.style.display = 'block';
+
+        btnPrices.style = outlineStyle;
+        btnBudget.style = greenStyle;
+    });
+</script>
+
+<!-- JavaScript to toggle sections -->
+<script>
+    $(document).ready(function () {
+
+        let foodItems = [];
+        let allProducts = {};
+        let productNames = [];
+    
+        fetch("/get_data")
+        .then(response => response.json())
+        .then(data => {
+            allProducts = data;
+            let categories = Object.keys(data);
+            
+    
+            categories.forEach(category => {
+                data[category].forEach(product => {
+                    productNames.push(product["المنتج"]);
+                });
+            });
+    
+        });
+    
+        
+
+        // ✅ إضافة AutoComplete لحقل إدخال اسم المنتج
+        $("#product-name").autocomplete({
+            source: productNames,
+            minLength: 1
+        });
+
+        // عند الضغط على زر "+"
+        $("#add-item").click(function () {
+            let quantity = parseFloat($("#quantity").val()) || 1;
+            let selectedProduct = $("#product-name").val();
+            let priceValue = null;
+            let productName = null;
+
+            Object.keys(allProducts).forEach(category => {
+                allProducts[category].forEach(product => {
+                    if (product["المنتج"] === selectedProduct) {
+                        let priceText = product["السعر"];
+                        let priceNumber = parseFloat(priceText.replace(/[^\d.]/g, ''));
+                        priceValue = priceNumber;
+                        productName = product["المنتج"];
+                    }
+                });
+            });
+
+            if (priceValue !== null && productName) {
+                let totalProductPrice = priceValue * quantity;
+                
+
+                let itemIndex = foodItems.length;
+                foodItems.push({ productName, quantity, priceValue });
+
+                // ✅ أضيفي عنصر واحد فقط (اللي المستخدم لسه كتبه)
+                $("#product-list").append(`
+                    <li class="food-item" data-index="${itemIndex}">
+                        ${productName} : ${quantity} × ${priceValue} = ${totalProductPrice.toFixed(2)} جنيه
+                        <button class="remove-btn" onclick="removeItem(${itemIndex}, ${totalProductPrice})">❌</button>
+                    </li>
+                `);
+
+                // ✅ مسح الحقول بعد الإضافة
+                $("#product-name").val('');
+                $("#quantity").val('');
+            } else {
+                alert("من فضلك اختر منتجًا وأدخل الكمية!");
+            }
+        });
+
+        // وظيفة إزالة عنصر
+        window.removeItem = function(index) {
+            foodItems.splice(index, 1);
+            $(`li[data-index="${index}"]`).remove();
+
+            // تحديث الفهارس لتجنب مشاكل الحذف
+            $("#product-list .food-item").each(function(i) {
+                $(this).attr("data-index", i);
+                $(this).find(".remove-btn").attr("onclick", `removeItem(${i})`);
+            });
+
+            // إذا كانت القائمة فارغة، ضع 0 سعرات حرارية
+            if (foodItems.length === 0) {
+                $("#total-price").text(0);
+            }
+        };
+
+        // ✅ حساب المجموع عند الضغط على زر "احسب السعر"
+        let totalPrice = 0;
+
+        $("#calculate").click(function() {
+            totalPrice = 0;  // إعادة تعيين المجموع
+            if (foodItems.length === 0) {
+            alert("يرجى إضافة عنصر واحد على الأقل لحساب السعر.");
+            $("#total-price").text(0);
+            return;
+        }
+
+            // حساب المجموع الكلي بناءً على العناصر في القائمة
+            $(".food-item").each(function() {
+                let priceText = $(this).text();
+                let price = parseFloat(priceText.split('=')[1].replace(/[^\d.]/g, '').trim());
+                totalPrice += price;
+            });
+
+            // عرض المجموع النهائي في العنصر
+            $("#total-price").text(totalPrice.toFixed(2));  // عرض المجموع بدقة منزلتين عشريتين
+        });
+
+        // ✅ إزالة منتج من القائمة وتحديث المجموع
+        function removeItem(itemIndex, itemPrice) {
+            // العثور على العنصر وحذفه
+            let item = $(`li[data-index="${itemIndex}"]`);
+            item.remove();
+
+            // تحديث المجموع بعد الحذف
+            totalPrice -= itemPrice;
+            $("#total-price").text(totalPrice.toFixed(2)); // عرض المجموع الجديد
+        }
+
+      
+
+  
+    });
+
+
+
+
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        let allProducts = {};
+        let productNames = [];
+    
+        fetch("/get_data")
+        .then(response => response.json())
+        .then(data => {
+            allProducts = data;
+            let categories = Object.keys(data);
+            let buttonsContainer = $("#category-buttons");
+    
+            categories.forEach(category => {
+                data[category].forEach(product => {
+                    productNames.push(product["المنتج"]);
+                });
+            });
+    
+            buttonsContainer.empty();
+            categories.forEach(category => {
+                buttonsContainer.append(`<button class="btn-category btn m-1" onclick="loadCategory('${category}', this)">${category}</button>`);
+            });
+    
+            if (categories.length > 0) {
+                loadCategory(categories[0], $(".btn-category").first());
+            }
+        });
+    
+        window.loadCategory = function (category, btnElement) {
+            let tableBody = $("#products-table");
+            tableBody.html("");
+    
+            if (allProducts[category] && allProducts[category].length > 0) {
+                allProducts[category].forEach(product => {
+                    let row = `<tr><td>${product["المنتج"]}</td><td>${product["السعر"]}</td></tr>`;
+                    tableBody.append(row);
+                });
+            } else {
+                tableBody.html(`<tr><td colspan="2" class="text-center">❌ لا توجد بيانات</td></tr>`);
+            }
+    
+            $(".btn-category").removeClass("active-category");
+            $(btnElement).addClass("active-category");
+        };
+    
+        // ✅ إضافة AutoComplete للبحث
+        $("#search-box").autocomplete({
+            source: productNames,
+            select: function (event, ui) {
+                let selectedProduct = ui.item.value;
+                let found = false;
+                $("#search-result-body").html("");
+    
+                Object.keys(allProducts).forEach(category => {
+                    allProducts[category].forEach(product => {
+                        if (product["المنتج"] === selectedProduct) {
+                            let row = `<tr><td>${product["المنتج"]}</td><td>${product["السعر"]}</td></tr>`;
+                            $("#search-result-body").append(row);
+                            $("#search-result-box").fadeIn();
+                            found = true;
+                        }
+                    });
+                });
+    
+                if (!found) {
+                    $("#search-result-box").fadeOut();
+                }
+    
+                $("#search-box").removeClass("error"); // إزالة اللون الأحمر
+            }
+        });
+    
+        // ✅ البحث اليدوي أيضًا بجانب AutoComplete
+        $("#search-box").on("input", function () {
+            let searchValue = $(this).val().toLowerCase();
+            let found = false;
+            $("#search-result-body").html("");
+    
+            if (searchValue.trim() === "") {
+                $("#search-box").removeClass("error");
+                $("#search-result-box").fadeOut();
+                return;
+            }
+    
+            Object.keys(allProducts).forEach(category => {
+                allProducts[category].forEach(product => {
+                    if (product["المنتج"].toLowerCase().includes(searchValue)) {
+                        let row = `<tr><td>${product["المنتج"]}</td><td>${product["السعر"]}</td></tr>`;
+                        $("#search-result-body").append(row);
+                        $("#search-result-box").fadeIn();
+                        found = true;
+                    }
+                });
+            });
+    
+            if (!found) {
+                $("#search-box").addClass("error");
+                $("#search-result-box").fadeOut();
+            } else {
+                $("#search-box").removeClass("error");
+            }
+        });
+    });
+    </script>
+
+    <!-- scroll-top -->
+    <a href="#" id="scroll-top"><i class="far fa-arrow-up-from-arc"></i></a>
+    <!-- scroll-top end -->
+
+
+    <!-- js -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+      <!-- meta tags -->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+  
+      <!-- title -->
+      <title>FoodGuard AI.</title>
+  
+      <!-- favicon -->
+      <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+  
+      <!-- css -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
+      <link rel="stylesheet" href="assets/css/animate.min.css">
+      <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+      <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+      <link rel="stylesheet" href="assets/css/nice-select.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+
+
+<!-- تحميل jQuery و jQuery UI -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="loader-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- header area -->
+    <header class="header">
+
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <div class="row align-items-center">
+                        <!-- Left Section -->
+                        <div class="col-4">
+                            <div class="header-top-left">
+                                <ul class="header-top-list">
+                                    <li><a href="mailto:info@example.com"><i class="far fa-envelope"></i> foodguardai@gmail.com</a></li>
+                                    <li><a href="tel:+21236547898"><i class="far fa-headset"></i> +201202743022</a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <!-- Logo in Center -->
+                        <div class="col-4 text-center">
+                            <div class="header-top-logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/logo.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+        
+                        <!-- Right Section -->
+                        <div class="col-4">
+                            <div class="header-top-right text-end">
+                                <ul class="header-top-list">
+                                    <li>
+                                        <div class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="far fa-globe-americas"></i>
+                                               <span id="current-lang">Language</span>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                              <a class="dropdown-item lang-select" href="#" data-lang="en">English</a>
+                                              <a class="dropdown-item lang-select" href="#" data-lang="ar">العربية</a>
+                                            </div>
+                                          </div>
+                                    </li>
+                                    <li class="social">
+                                        <div class="header-top-social">
+                                            <span>Follow Us: </span>
+                                            <a href="#"><i class="fab fa-facebook"></i></a>
+                                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            
+
+        <!-- header main navigation -->
+        <div class="main-navigation">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container position-relative">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/logo.png" class="logo-scrolled" alt="logo">
+                    </a>
+                   
+                    <div class="mobile-menu-right">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Services</a>
+                                <ul class="dropdown-menu fade-down">
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5000">Evaluate food quality</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5001">calories calculator</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5010">food suggestions</a></li>
+                                    <!-- <li><a class="dropdown-item" href="index-4.html">Home Demo 04</a></li> -->
+                                </ul>
+                            </li>                            
+                            <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8080">Prices</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5005">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href=" http://127.0.0.1:5006">Contact</a></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main class="main">
+
+        <!-- breadcrumb -->
+        <div class="site-breadcrumb">
+            <div class="site-breadcrumb-bg" style="background: url(assets/img/breadcrumb/01.jpg)"></div>
+            <div class="container">
+                <div class="site-breadcrumb-wrap">
+                    <h4 class="breadcrumb-title">calories
+                        calculator</h4>
+                    <ul class="breadcrumb-menu">
+                        <li><a href="http://127.0.0.1:5002"><i class="far fa-home"></i> Home</a></li>
+                        <li class="active">calories
+                            calculator</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb end -->
+
+
+<!-- User Dashboard -->
+<div class="user-area bg pt-100 pb-80">
+    <div class="container d-flex justify-content-center">
+        <div class="col-lg-6">
+            <div class="user-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="user-card"> 
+                            <div class="user-card-header text-center">
+                                <h4 class="user-card-title"data-i18n="Food Calories Calculator">Food Calories Calculator</h4>
+                            </div>
+                            <div class="user-form">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <label data-i18n="type of food">type of food  </label>
+                                        <select id="food-type" class="form-control">
+                                            <option value="all" data-i18n="all">all</option>
+                                            <option value="drink" data-i18n="drink">drink</option>
+                                            <option value="meal" data-i18n="meal">meal </option>
+                                            <option value="item" data-i18n="item">item</option>
+                                            
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label data-i18n="Name of food/drink"> Name of food/drink  </label>
+                                        <input type="text" id="food-name" class="form-control"
+                                         data-i18n="Enter the name of the food/drink"
+                                         placeholder="Enter the name of the food/drink">
+                                    </div>
+                                   
+                                    <div class="form-group">
+                                        <label data-i18n="Quantity Type"> Quantity Type</label>
+                                        <select id="measure-type" class="form-control">
+                                            <option value="جرام" data-i18n="gram">جرام</option>
+                                            <option value="ملعقة" data-i18n="spoon">ملعقة </option>
+                                            <option value="كوب" data-i18n="cup">كوب</option>
+                                            <option value="قطعة" data-i18n="piece">قطعة</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label  data-i18n="Quantity">الكمية</label>
+                                        <input type="number" id="quantity" class="form-control" data-i18n="Quantity" placeholder="الكمية">
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button type="button" id="add-item" class="theme-btn">+</button>
+                                    </div>
+                                    <ul id="food-list" class="food-list"></ul>
+                                    <div class="form-group text-center">
+                                        <button type="button" id="calculate" class="theme-btn" data-i18n="Count calories"> Count calories </button>
+                                    </div>
+                                    <h3 class="total-calories text-center" data-i18n="Total calories:"> Total calories: <span id="total-calories">0</span> kcal</h3>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- user dashboard end -->
+
+
+    </main>
+
+    <!-- footer area -->
+    <footer class="footer-area">
+       
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright-wrap">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 align-self-center">
+                            <p class="copyright-text">
+                                &copy; Copyright <span id="date"></span> <a href="#"> FoodGuard AI. </a> All Rights Reserved.
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6 align-self-center">
+                            <div class="footer-social">
+                                <span>Follow Us:</span>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+       
+
+
+        let foodItems = [];
+let availableFoods = [];
+
+$(document).ready(function() {
+    // تحميل قائمة الأطعمة المتاحة من السيرفر
+
+    function updateFoodList() {
+        let selectedType = $("#food-type").val();
+        $.get(`http://127.0.0.1:5001/food-list/${selectedType}`, function(response) {
+            availableFoods = response.foods.map(item => item.trim().toLowerCase());
+            $("#food-name").autocomplete({
+                source: availableFoods,
+                minLength: 1
+            });
+        });
+    }
+    updateFoodList();
+    $("#food-type").on("change", updateFoodList);
+    // عند تغيير اسم الطعام، تحميل نوع الكمية المناسبة
+    $("#food-name").on("change", function() {
+        let selectedFood = $(this).val().trim().toLowerCase();
+        if (availableFoods.includes(selectedFood)) {
+            $.get(`http://127.0.0.1:5001/food-measure/${selectedFood}`, function(response) {
+                let measureTypes = response.measure;
+
+                // التأكد من أن measureTypes هو Array
+                if (!Array.isArray(measureTypes)) {
+                    console.error("Error: measureTypes is not an array", measureTypes);
+                    return;
+                }
+
+                $("#measure-type").empty();
+
+                if (measureTypes.includes("قطعة") && measureTypes.length === 1) {
+                    $("#measure-type").append(`<option value="${i18next.t("piece")}" data-i18n="piece">${i18next.t("piece")}</option>`);
+                } else {
+                    if (measureTypes.includes("جرام")) {
+                        $("#measure-type").append(`<option value="${i18next.t("gram")}" data-i18n="gram">${i18next.t("gram")}</option>`);
+                    }
+
+                    if (measureTypes.includes("ملاعق")) {
+                    $("#measure-type").append(`<option value="${i18next.t("spoons")}" data-i18n="spoons">${i18next.t("spoons")}</option>`);
+                    }
+
+                    if (measureTypes.includes("أكواب")) {
+                    $("#measure-type").append(`<option value="${i18next.t("cups")}" data-i18n="cups">${i18next.t("cups")}</option>`);
+                    }
+                }
+            });
+        }
+    });
+
+    // زر إضافة عنصر جديد
+    $("#add-item").click(function() {
+        let name = $("#food-name").val().trim().toLowerCase();
+        let type = $("#measure-type").val();
+        let amount = $("#quantity").val();
+        
+
+
+        if (!name || !amount || !type) {
+            alert("يرجى إدخال جميع الحقول.");
+            return;
+        }
+
+        if (!availableFoods.includes(name)) {
+            alert("⚠️ هذا الطعام غير موجود في قاعدة البيانات!");
+            return;
+        }
+
+        let itemIndex = foodItems.length;
+        foodItems.push({ name, type, amount });
+
+        $("#food-list").append(`
+            <li class="food-item" data-index="${itemIndex}">
+                ${name} - ${amount} ${type}
+                <button class="remove-btn" onclick="removeItem(${itemIndex})">❌</button>
+            </li>
+        `);
+
+        // إعادة تعيين الحقول وتحسين تجربة المستخدم
+        $("#food-name").val("").focus();  
+        $("#quantity").val("");
+    });
+
+    // وظيفة إزالة عنصر
+    window.removeItem = function(index) {
+        foodItems.splice(index, 1);
+        $(`li[data-index="${index}"]`).remove();
+
+        // تحديث الفهارس لتجنب مشاكل الحذف
+        $("#food-list .food-item").each(function(i) {
+            $(this).attr("data-index", i);
+            $(this).find(".remove-btn").attr("onclick", `removeItem(${i})`);
+        });
+
+        // إذا كانت القائمة فارغة، ضع 0 سعرات حرارية
+        if (foodItems.length === 0) {
+            $("#total-calories").text(0);
+        }
+    };
+
+    // زر حساب السعرات الحرارية
+    $("#calculate").click(function() {
+        if (foodItems.length === 0) {
+            alert("يرجى إضافة عنصر واحد على الأقل لحساب السعرات الحرارية.");
+            $("#total-calories").text(0);
+            return;
+        }
+
+        // إضافة رسالة تحميل
+        $("#total-calories").text("جارٍ الحساب...");
+
+        $.ajax({
+            url: "http://127.0.0.1:5001/calculate",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({ items: foodItems }),
+            success: function(response) {
+                $("#total-calories").text(response.total);
+                if (response.not_found.length > 0) {
+                    alert("⚠️ الأطعمة التالية غير موجودة: " + response.not_found.join(", "));
+                }
+            }
+        });
+    });
+});
+
+
+        </script>
+        
+
+
+
+    <!-- scroll-top -->
+    <a href="#" id="scroll-top"><i class="far fa-arrow-up-from-arc"></i></a>
+    <!-- scroll-top end -->
+
+
+    
+    <!-- translation-->
+
+
+    <script src="https://unpkg.com/i18next@21.6.14/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.5/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+
+    
+    <script>
+        const resources = {
+            en: {
+                translation: {
+                    "Food Calories Calculator": "Food Calories Calculator",
+                    "type of food":"type of food",
+                    "all":"all",
+                    "drink":"drink",
+                    "meal":"meal",
+                    "item":"item",
+                    "Name of food/drink": "Name of food/drink",
+                    "Enter the name of the food/drink":  "Enter the name of the food/drink",
+                    "Quantity Type": "Quantity Type",
+                    "gram": "gram",
+                    "spoon": "spoon",
+                    "cup":"cup",
+                    "spoons":"spoons",
+                    "cups":"cups",
+                    "piece": "piece",
+                    "Quantity": "Quantity ",
+                    "Count calories": "Count calories",
+                    "Total calories:": "Total Calories: <span id='total-calories'>0</span> kcal"
+
+                }
+            },
+            ar: {
+                translation: {
+                    "Food Calories Calculator": " حاسبة السعرات الحرارية للطعام",
+                    "type of food":"نوع الطعام",
+                    "all":"الكل",
+                    "drink":"مشروب",
+                    "meal":"اكلة",
+                    "item":"صنف",
+                    "Name of food/drink": "اسم الطعام / المشروب",
+                    "Enter the name of the food/drink": "أدخل اسم الطعام/المشروب",
+                    "Quantity Type": " نوع الكمية",
+                    "gram": "جرام ",
+                    "spoon": "ملعقة",
+                    "cup": "كوب",
+                    "spoons":"ملاعق",
+                    "cups":"أكواب",
+                    "piece": "قطعة",
+                    "Quantity": "الكمية ",
+                    "Count calories": " احسب السعرات",
+                    "Total calories:": "إجمالي السعرات: <span id='total-calories'>0</span> سعرة حرارية"
+                }
+            }
+        };
+    
+        i18next
+        .use(i18nextBrowserLanguageDetector)
+        .init({
+            resources,
+            fallbackLng: "ar",
+            debug: false
+        }, function (err, t) {
+            updateContent();
+        });
+
+    function updateContent() {
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+            const key = el.getAttribute("data-i18n");
+
+            // If element has placeholder, set it
+            if (el.hasAttribute("placeholder")) {
+                el.setAttribute("placeholder", i18next.t(key));
+            }
+
+            // For other elements (like labels/divs), update innerHTML
+            if (!["INPUT", "TEXTAREA"].includes(el.tagName)) {
+                el.innerHTML = i18next.t(key);
+            }
+        });
+    }
+
+    function changeLng(lng) {
+        i18next.changeLanguage(lng, () => {
+            updateContent();
+
+            // Clear all text inputs when language is changed
+            document.querySelectorAll("input[type='text']").forEach(input => input.value = "");
+        });
+    }
+
+    // لتغيير اللغة من الـ dropdown
+    $(document).on("click", ".lang-select", function () {
+        const lang = $(this).data("lang");
+        changeLng(lang);
+    });
+    </script>
+
+ 
+
+
+      
+    <!-- translation end -->
+
+
+
+    <!-- js -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

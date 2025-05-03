@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- title -->
+    <title>FoodGuard AI.</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="loader-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+
+    <!-- header area -->
+    <header class="header">
+
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <div class="row align-items-center">
+                        <!-- Left Section -->
+                        <div class="col-4">
+                            <div class="header-top-left">
+                                <ul class="header-top-list">
+                                    <li><a href="mailto:info@example.com"><i class="far fa-envelope"></i> foodguardai@gmail.com</a></li>
+                                    <li><a href="tel:+21236547898"><i class="far fa-headset"></i> +201202743022</a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <!-- Logo in Center -->
+                        <div class="col-4 text-center">
+                            <div class="header-top-logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/logo.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+        
+                        <!-- Right Section -->
+                        <div class="col-4">
+                            <div class="header-top-right text-end">
+                                <ul class="header-top-list">
+                                    <li>
+                                        <div class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="far fa-globe-americas"></i> EN
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">EN</a>
+                                                <a class="dropdown-item" href="#">FR</a>
+                                                <a class="dropdown-item" href="#">DE</a>
+                                                <a class="dropdown-item" href="#">RU</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="social">
+                                        <div class="header-top-social">
+                                            <span>Follow Us: </span>
+                                            <a href="#"><i class="fab fa-facebook"></i></a>
+                                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- header main navigation -->
+        <div class="main-navigation">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container position-relative">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/logo.png" class="logo-scrolled" alt="logo">
+                    </a>
+                   
+                    <div class="mobile-menu-right">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Services</a>
+                                <ul class="dropdown-menu fade-down">
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5000">Evaluate food quality</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5001">calories calculator</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5010">food suggestions</a></li>
+                                    <!-- <li><a class="dropdown-item" href="index-4.html">Home Demo 04</a></li> -->
+                                </ul>
+                            </li>                            
+                            <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8080">Prices</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5005">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href=" http://127.0.0.1:5006">Contact</a></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <!-- header area end -->
+
+
+    <main class="main">
+
+        <!-- breadcrumb -->
+        <div class="site-breadcrumb">
+            <div class="site-breadcrumb-bg" style="background: url(assets/img/breadcrumb/about1.jpg)"></div>
+            <div class="container">
+                <div class="site-breadcrumb-wrap">
+                    <h4 class="breadcrumb-title">About US</h4>
+                    <ul class="breadcrumb-menu">
+                        <li><a href="http://127.0.0.1:5002"><i class="far fa-home"></i> Home</a></li>
+                        <li class="active">About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb end -->
+
+        <!-- breadcrumb end -->
+
+
+        <!-- about area -->
+        <div class="about-area py-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-left wow fadeInLeft" data-wow-delay=".25s">
+                            <div class="about-img">
+                                <img src="assets/img/about/01.jpg" alt="">
+                            </div>
+                            <!-- <div class="about-experience">
+                                <div class="about-experience-icon">
+                                    <img src="assets/img/icon/experience.svg" alt="">
+                                </div>
+                                <b>30 Years Of <br> Experience</b>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-right wow fadeInRight" data-wow-delay=".25s">
+                            <div class="site-heading mb-3">
+                                <span class="site-title-tagline justify-content-start">
+                                    <i class="flaticon-drive"></i> About Us
+                                </span>
+                                <h2 class="site-title">
+                                    Empowering Healthy Choices with AI – Ensuring <span>Quality & Nutrition </span>in Every Bite! 
+                                </h2>
+                            </div>
+                            <p>
+                                We are final-year students at the Faculty of Computers and Information, Ain Shams University, specializing in Scientific Computing. Our passion for technology and innovation has driven us to develop an AI-powered system that enhances food safety and nutritional awareness.                            </p>
+                            <p class="mt-10">
+                                Food quality and calorie estimation play a crucial role in health and well-being. With the rise of processed foods and changing dietary habits, ensuring the freshness and nutritional value of what we consume has never been more important. Our project leverages artificial intelligence and computer vision to analyze food quality and estimate calorie content, providing users with valuable insights to make healthier choices.
+
+                                By integrating technology into daily life, we strive to contribute to a future where food safety and nutrition are more accessible, helping individuals lead healthier and more informed lifestyles                            </p>
+                            <a href="http://127.0.0.1:5006" class="theme-btn mt-4">Discover More<i
+                                    class="fas fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about area end -->
+  <!-- feature area -->
+  <div class="feature-area pb-100">
+    <div class="container">
+        <div class="feature-wrap">
+            <div class="row g-0">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fal fa-search"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Freshness Check</h4>
+                            <p>Ensure Safe & Fresh Food</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fal fa-calculator"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Calorie Tracker</h4>
+                            <p>Know Your Food's Nutrition</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fal fa-utensils"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Smart Recipes</h4>
+                            <p>Get Meals from Your Ingredients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fal fa-bolt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Quick & Simple</h4>
+                            <p>Fast, Hassle-Free Food Analysis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- feature area end -->
+
+        <!-- counter area -->
+        <!-- <div class="counter-area pt-50 pb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="counter-box">
+                            <div class="icon">
+                                <img src="assets/img/icon/shopping.svg" alt="">
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-amount">
+                                    <span class="counter" data-count="+" data-to="50" data-speed="3000">50</span>
+                                    <span class="counter-sign">k+</span>
+                                </div>
+                                <h6 class="title">Total Sales </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="counter-box">
+                            <div class="icon">
+                                <img src="assets/img/icon/rating.svg" alt="">
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-amount">
+                                    <span class="counter" data-count="+" data-to="90" data-speed="3000">90</span>
+                                    <span class="counter-sign">k+</span>
+                                </div>
+                                <h6 class="title">Happy Clients</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="counter-box">
+                            <div class="icon">
+                                <img src="assets/img/icon/employee.svg" alt="">
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-amount">
+                                    <span class="counter" data-count="+" data-to="150" data-speed="3000">150</span>
+                                    <span class="counter-sign">k+</span>
+                                </div>
+                                <h6 class="title">Team Workers</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="counter-box">
+                            <div class="icon">
+                                <img src="assets/img/icon/award.svg" alt="">
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-amount">
+                                    <span class="counter" data-count="+" data-to="30" data-speed="3000">30</span>
+                                    <span class="counter-sign">k+</span>
+                                </div>
+                                <h6 class="title">Win Awards</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- counter area end -->
+
+
+        <!-- testimonial area -->
+        <!-- <div class="testimonial-area bg py-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Testimonials</span>
+                            <h2 class="site-title">What Our Client <span>Say's</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slider owl-carousel owl-theme">
+                    <div class="testimonial-item">
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/01.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Sylvia H Green</h4>
+                                <p>Customer</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote">
+                            <p>
+                                There are many variations of long passages available but the content majority have
+                                suffered to the editor page when looking at its layout alteration in some injected.
+                            </p>
+                        </div>
+                        <div class="testimonial-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-quote-icon"><img src="assets/img/icon/quote.svg" alt=""></div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/02.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Gordo Novak</h4>
+                                <p>Customer</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote">
+                            <p>
+                                There are many variations of long passages available but the content majority have
+                                suffered to the editor page when looking at its layout alteration in some injected.
+                            </p>
+                        </div>
+                        <div class="testimonial-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-quote-icon"><img src="assets/img/icon/quote.svg" alt=""></div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/03.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Reid E Butt</h4>
+                                <p>Customer</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote">
+                            <p>
+                                There are many variations of long passages available but the content majority have
+                                suffered to the editor page when looking at its layout alteration in some injected.
+                            </p>
+                        </div>
+                        <div class="testimonial-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-quote-icon"><img src="assets/img/icon/quote.svg" alt=""></div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/04.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Parker Jimenez</h4>
+                                <p>Customer</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote">
+                            <p>
+                                There are many variations of long passages available but the content majority have
+                                suffered to the editor page when looking at its layout alteration in some injected.
+                            </p>
+                        </div>
+                        <div class="testimonial-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-quote-icon"><img src="assets/img/icon/quote.svg" alt=""></div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/05.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Heruli Nez</h4>
+                                <p>Customer</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote">
+                            <p>
+                                There are many variations of long passages available but the content majority have
+                                suffered to the editor page when looking at its layout alteration in some injected.
+                            </p>
+                        </div>
+                        <div class="testimonial-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-quote-icon"><img src="assets/img/icon/quote.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- testimonial area end -->
+
+
+        <!-- video area -->
+        <div class="video-area pt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Our Video</span>
+                            <h2 class="site-title">Let's Check Our <span>Latest Video</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content" style="background-image: url(assets/img/video/01.png);">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="video-wrapper">
+                                <a class="play-btn popup-youtube" href="assets/img/video/01.mp4">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- 
+        <div class="video-content" style="background-image: url(assets/img/video/01.jpg);">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="video-wrapper">
+                        <a class="play-btn" data-fancybox href="assets/videos/my-video.mp4">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        
+        <!-- video area end -->
+
+
+        <!-- team-area -->
+        <!-- <div class="team-area pt-100 pb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Our Team</span>
+                            <h2 class="site-title">Meet Our Expert <span>Team</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay=".25s">
+                            <div class="team-img">
+                                <img src="assets/img/team/01.jpg" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Chad Smith</a></h5>
+                                    <span>Senior Manager</span>
+                                </div>
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay=".50s">
+                            <div class="team-img">
+                                <img src="assets/img/team/02.jpg" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Malissa Fie</a></h5>
+                                    <span>SEO Expert</span>
+                                </div>
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay=".75s">
+                            <div class="team-img">
+                                <img src="assets/img/team/03.jpg" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Arron Rodri</a></h5>
+                                    <span>CEO & Founder</span>
+                                </div>
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay="1s">
+                            <div class="team-img">
+                                <img src="assets/img/team/04.jpg" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Tony Pinako</a></h5>
+                                    <span>Digital Marketer</span>
+                                </div>
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay="1s">
+                            <div class="team-img">
+                                <img src="assets/img/team/04.jpg" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Tony Pinako</a></h5>
+                                    <span>Digital Marketer</span>
+                                </div>
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay="1s">
+                            <div class="team-img">
+                                <img src="assets/img/team/04.jpg" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Tony Pinako</a></h5>
+                                    <span>Digital Marketer</span>
+                                </div>
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- team-area end -->
+
+
+        <!-- newsletter area -->
+        <!-- <div class="newsletter-area pb-100">
+            <div class="container">
+                <div class="newsletter-wrap">
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+                            <div class="newsletter-content">
+                                <h3>Get <span>20%</span> Off Discount Coupon</h3>
+                                <p>By Subscribe Our Newsletter</p>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="email" class="form-control" placeholder="Your Email Address">
+                                        <button class="theme-btn" type="submit">
+                                            Subscribe <i class="far fa-paper-plane"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- newsletter area end -->
+
+
+        <!-- instagram-area -->
+        <!-- <div class="instagram-area pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <h2 class="site-title">Instagram <span>@Organo</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="instagram-slider owl-carousel owl-theme">
+                    <div class="instagram-item">
+                        <div class="instagram-img">
+                            <img src="assets/img/instagram/01.jpg" alt="Thumb">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <div class="instagram-img">
+                            <img src="assets/img/instagram/02.jpg" alt="Thumb">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <div class="instagram-img">
+                            <img src="assets/img/instagram/03.jpg" alt="Thumb">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <div class="instagram-img">
+                            <img src="assets/img/instagram/04.jpg" alt="Thumb">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <div class="instagram-img">
+                            <img src="assets/img/instagram/05.jpg" alt="Thumb">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <div class="instagram-img">
+                            <img src="assets/img/instagram/06.jpg" alt="Thumb">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <div class="instagram-img">
+                            <img src="assets/img/instagram/07.jpg" alt="Thumb">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- instagram-area end -->
+
+
+      
+
+    </main>
+
+
+    <!-- footer area -->
+    <footer class="footer-area">
+       
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright-wrap">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 align-self-center">
+                            <p class="copyright-text">
+                                &copy; Copyright <span id="date"></span> <a href="#"> FoodGuard AI. </a> All Rights Reserved.
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6 align-self-center">
+                            <div class="footer-social">
+                                <span>Follow Us:</span>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+
+    <!-- scroll-top -->
+    <a href="#" id="scroll-top"><i class="far fa-arrow-up-from-arc"></i></a>
+    <!-- scroll-top end -->
+
+
+    <!-- js -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Quality Prediction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+      body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 400px;
+        }
+
+        .upload-box {
+            width: 100%;
+            height: 250px;
+            border: 3px dashed #007bff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            cursor: pointer;
+            background-color: white;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .upload-box.dragover {
+            background-color: #e8f0ff;
+            border-color: #0056b3;
+        }
+
+        .upload-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+        .upload-box p {
+            color: #007bff;
+            font-weight: bold;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .buttons {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .reset-btn {
+            background-color: #dc3545;
+        }
+
+        .reset-btn:hover {
+            background-color: #b02a37;
+        }
+
+        #loading {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #007bff;
+            display: none;
+        }
+
+        .spinner {
+            width: 30px;
+            height: 30px;
+            border: 4px solid rgba(0, 123, 255, 0.3);
+            border-top: 4px solid #007bff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 10px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #result {
+            display: none;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .fresh {
+            background-color: #d4edda;
+            color: #155724;
+            border: 2px solid #c3e6cb;
+        }
+
+        .medium {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 2px solid #ffeeba;
+        }
+
+        .expired {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 2px solid #f5c6cb;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="upload-box" id="uploadBox">
+            <p id="uploadText">Drag & Drop an Image Here <br> 
+                <span style="font-size: 12px; color: gray;">or Click to Select</span>
+            </p>
+            <input type="file" id="fileInput" accept="image/*" hidden>
+            <img id="previewImage">
+        </div>
+    </div>
+    
+
+        <div class="buttons">
+            <button id="startButton" style="display: none;">Start Processing</button>
+            <button id="resetButton" class="reset-btn" style="display: none;">Reset</button>
+        </div>
+
+        <div id="loading">
+            <p>Processing Image...</p>
+            <div class="spinner"></div>
+        </div>
+       <div>
+        <p id="result"></p>
+       </div>
+
+    <script>
+        const uploadBox = document.getElementById("uploadBox");
+        const fileInput = document.getElementById("fileInput");
+        const previewImage = document.getElementById("previewImage");
+        const uploadText = document.getElementById("uploadText");
+        const startButton = document.getElementById("startButton");
+        const resetButton = document.getElementById("resetButton");
+        const resultBox = document.getElementById("result");
+        let uploadedFile = null;
+
+        uploadBox.addEventListener("click", () => fileInput.click());
+
+        fileInput.addEventListener("change", (event) => {
+            const file = event.target.files[0];
+            if (file) saveImage(file);
+        });
+
+        uploadBox.addEventListener("dragover", (event) => {
+            event.preventDefault();
+            uploadBox.classList.add("dragover");
+        });
+
+        uploadBox.addEventListener("dragleave", () => {
+            uploadBox.classList.remove("dragover");
+        });
+
+        uploadBox.addEventListener("drop", (event) => {
+            event.preventDefault();
+            uploadBox.classList.remove("dragover");
+
+            const file = event.dataTransfer.files[0];
+            if (file) saveImage(file);
+        });
+
+        function saveImage(file) {
+            uploadedFile = file;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                previewImage.src = e.target.result;
+                previewImage.style.display = "block";
+                uploadText.style.display = "none";
+                startButton.style.display = "inline-block";
+                resetButton.style.display = "inline-block";
+            };
+            reader.readAsDataURL(file);
+        }
+
+        startButton.addEventListener("click", () => {
+            if (uploadedFile) {
+                const formData = new FormData();
+                formData.append("file", uploadedFile);
+
+                document.getElementById("loading").style.display = "block";
+                resultBox.style.display = "none";
+                startButton.style.display = "none";
+
+                fetch("http://127.0.0.1:5000/predict", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("loading").style.display = "none";
+
+                    resultBox.textContent = `Prediction: ${data.prediction} (Confidence: ${data.confidence.toFixed(2)})`;
+                    
+                    if (data.prediction === "Fresh") {
+                        resultBox.className = "fresh";
+                    } else if (data.prediction === "Medium") {
+                        resultBox.className = "medium";
+                    } else {
+                        resultBox.className = "expired";
+                    }
+
+                    resultBox.style.display = "block";
+                    startButton.style.display = "inline-block";
+                })
+                .catch(() => {
+                    document.getElementById("loading").style.display = "none";
+                    alert("Error processing the image!");
+                    startButton.style.display = "inline-block";
+                });
+            }
+        });
+
+        resetButton.addEventListener("click", () => {
+            fileInput.value = "";
+            previewImage.style.display = "none";
+            uploadText.style.display = "block";
+            startButton.style.display = "none";
+            resetButton.style.display = "none";
+            resultBox.style.display = "none";
+        });
+
+    </script>
+
+</body>
+</html>

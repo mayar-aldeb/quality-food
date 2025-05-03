@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+      <!-- meta tags -->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+  
+      <!-- title -->
+      <title>FoodGuard AI.</title>
+  
+      <!-- favicon -->
+      <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+  
+      <!-- css -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
+      <link rel="stylesheet" href="assets/css/animate.min.css">
+      <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+      <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+      <link rel="stylesheet" href="assets/css/nice-select.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+
+
+<!-- تحميل jQuery و jQuery UI -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="loader-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- header area -->
+    <header class="header">
+
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <div class="row align-items-center">
+                        <!-- Left Section -->
+                        <div class="col-4">
+                            <div class="header-top-left">
+                                <ul class="header-top-list">
+                                    <li><a href="mailto:info@example.com"><i class="far fa-envelope"></i>foodguardai@gmail.com</a></li>
+                                    <li><a href="tel:+21236547898"><i class="far fa-headset"></i> +201202743022</a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <!-- Logo in Center -->
+                        <div class="col-4 text-center">
+                            <div class="header-top-logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/logo.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+        
+                        <!-- Right Section -->
+                        <div class="col-4">
+                            <div class="header-top-right text-end">
+                                <ul class="header-top-list">
+                                    <li>
+                                        <div class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="far fa-globe-americas"></i>
+                                               <span id="current-lang">Language</span>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                              <a class="dropdown-item lang-select" href="#" data-lang="en">English</a>
+                                              <a class="dropdown-item lang-select" href="#" data-lang="ar">العربية</a>
+                                            </div>
+                                          </div>
+                                          
+                                    </li>
+                                    <li class="social">
+                                        <div class="header-top-social">
+                                            <span>Follow Us: </span>
+                                            <a href="#"><i class="fab fa-facebook"></i></a>
+                                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- header main navigation -->
+        <div class="main-navigation">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container position-relative">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/logo.png" class="logo-scrolled" alt="logo">
+                    </a>
+                   
+                    <div class="mobile-menu-right">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Services</a>
+                                <ul class="dropdown-menu fade-down">
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5000">Evaluate food quality</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5001">calories calculator</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5010">food suggestions</a></li>
+                                    <!-- <li><a class="dropdown-item" href="index-4.html">Home Demo 04</a></li> -->
+                                </ul>
+                            </li>                            
+                            <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8080">Prices</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5005">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href=" http://127.0.0.1:5006">Contact</a></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main class="main">
+
+        <!-- breadcrumb -->
+        <div class="site-breadcrumb">
+            <div class="site-breadcrumb-bg" style="background: url(assets/img/breadcrumb/5050.jpg)"></div>
+            <div class="container">
+                <div class="site-breadcrumb-wrap">
+                    <h4 class="breadcrumb-title">food suggestions</h4>
+                    <ul class="breadcrumb-menu">
+                        <li><a href="http://127.0.0.1:5002"><i class="far fa-home"></i> Home</a></li>
+                        <li class="active">food suggestions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb end -->
+
+
+<!-- User Dashboard -->
+
+<div class="user-area bg pt-100 pb-80" style="min-height: calc(100vh - 100px); display: flex; align-items: start; justify-content: center;">
+    <div class="container d-flex justify-content-center">
+        <div class="col-lg-6">
+            <div class="user-wrapper">
+                <div class="user-card">
+                    <div class="user-card-header text-center">
+                        <h4 class="user-card-title" data-i18n="Suggest recipes based on ingredients">Suggest recipes based on ingredients</h4>
+                    </div>
+                    <div class="user-form">
+                        <form method="POST">
+                            <div class="form-group">
+                                <label data-i18n="Choose the type of recipes">Choose the type of recipes</label>
+                                <select name="healthy" class="form-control">
+                                    <option value="1" {% if request.form.get('healthy') == '1' %}selected{% endif %} data-i18n="Healthy">Healthy</option>
+                                    <option value="2" {% if request.form.get('healthy') == '2' %}selected{% endif %} data-i18n="normal">normal</option>
+                                </select>
+                            </div>
+
+                            <input type="hidden" name="language_value" id="language_value">
+
+
+                            
+
+                            <div class="form-group">
+                                <label data-i18n="Enter the ingredients (separated by a comma):">Enter the ingredients (separated by a comma):</label>
+                                <input type="text" name="ingredients" class="form-control" required value="{{ request.form.get('ingredients', '') }}" >
+                            </div>
+                            
+
+                            <div class="form-group text-center">
+                                <button type="submit" class="theme-btn" data-i18n="Suggest Recipes">Suggest Recipes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- النتائج -->
+<!-- الوصفات اللي كل مكوناتها متوفرة -->
+{% if meals_all %}
+<div class="results-container">
+    <h3 class="text-center mt-4" data-i18n="Exact Match Recipes">Exact Match Recipes</h3>
+    {% for i in range(meals_all|length) %}
+        <div class="recipe-card">
+            <div class="recipe-details">
+                <h4 class="fw-bold">{{ meals_all[i] }}</h4>
+                <p class="recipe-title"><strong data-i18n="ingredients">ingredients</strong></p>
+                <ul>
+                    {% for ingredient in matching_recipes_all[i] %}
+                        <li>{{ ingredient }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="recipe-image">
+                {% if images_all[i] %}
+                    <img src="{{ url_for('get_image', filename=images_all[i]) }}" class="img-fluid" alt="صورة الوصفة">
+                {% else %}
+                    <img src="{{ url_for('static', filename='no-image.png') }}" class="img-fluid" alt="لا توجد صورة">
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<!-- الوصفات اللي فيها بس بعض المكونات -->
+{% if meals_partial %}
+<div class="results-container">
+    <h3 class="text-center mt-4" data-i18n="Some Ingredients Only :">Some Ingredients Only :</h3>
+    {% for i in range(meals_partial|length) %}
+        <div class="recipe-card">
+            <div class="recipe-details">
+                <h4 class="fw-bold">{{ meals_partial[i] }}</h4>
+                <p><strong data-i18n="Available Ingredients :- ">Available Ingredients :- </strong>{{ found_ingredients_partial[i] | join(', ') }}</p>
+                <p class="recipe-title"><strong data-i18n="ingredients">ingredients</strong></p>
+                <ul>
+                    {% for ingredient in matching_recipes_partial[i] %}
+                        <li>{{ ingredient }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="recipe-image">
+                {% if images_partial[i] %}
+                    <img src="{{ url_for('get_image', filename=images_partial[i]) }}" class="img-fluid" alt="صورة الوصفة">
+                {% else %}
+                    <img src="{{ url_for('static', filename='no-image.png') }}" class="img-fluid" alt="لا توجد صورة">
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}
+</div>
+        <!-- user dashboard end -->
+
+
+    </main>
+
+
+
+
+    <!-- footer area -->
+    <footer class="footer-area">
+       
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright-wrap">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 align-self-center">
+                            <p class="copyright-text">
+                                &copy; Copyright <span id="date"></span> <a href="#"> FoodGuard AI. </a> All Rights Reserved.
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6 align-self-center">
+                            <div class="footer-social">
+                                <span>Follow Us:</span>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll-top -->
+    <a href="#" id="scroll-top"><i class="far fa-arrow-up-from-arc"></i></a>
+    <!-- scroll-top end -->
+
+
+
+
+
+
+    <!-- translation-->
+
+
+    <script src="https://unpkg.com/i18next@21.6.14/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.5/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script>
+        const resources = {
+            en: {
+                translation: {
+                    "Suggest recipes based on ingredients": "Suggest recipes based on ingredients",
+                    "Choose the type of recipes": "Choose the type of recipes",
+                    "Healthy": "Healthy",
+                    "normal": "normal",
+                    "Select language": "Select language",
+                    "Arabic": "Arabic",
+                    "English": "English",
+                    "Enter the ingredients (separated by a comma):": "Enter the ingredients (separated by a comma):",
+                    "Suggest Recipes": "Suggest Recipes",
+                    "Exact Match Recipes": "Exact Match Recipes",
+                    "ingredients": "Ingredients",
+                    "Some Ingredients Only :": "Some Ingredients Only :",
+                    "Available Ingredients :- ": "Available Ingredients :- "
+                }
+            },
+            ar: {
+                translation: {
+                    "Suggest recipes based on ingredients": "اقتراح الوصفات بناءً على المكونات",
+                    "Choose the type of recipes": "اختر نوع الوصفات",
+                    "Healthy": "صحي",
+                    "normal": " عادي",
+                    "Select language": "اختر اللغة",
+                    "Arabic": "العربية",
+                    "English": "الإنجليزية",
+                    "Enter the ingredients (separated by a comma):": "أدخل المكونات (مفصولة بفاصلة):",
+                    "Suggest Recipes": "اقترح وصفات",
+                    "Exact Match Recipes": "الوصفات المطابقة بالكامل",
+                    "ingredients": "المكونات",
+                    "Some Ingredients Only :": "وصفات تحتوي على بعض المكونات فقط",
+                    "Available Ingredients :- ": "المكونات المتوفرة :- "
+                }
+            }
+        };
+    
+        i18next
+            .use(i18nextBrowserLanguageDetector)
+            .init({
+                resources,
+                fallbackLng: "en",
+                debug: false
+            }, function(err, t) {
+                updateContent();
+            });
+    
+        function updateContent() {
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+                el.innerHTML = i18next.t(el.getAttribute("data-i18n"));
+            });
+        }
+    
+        function changeLng(lng) {
+            i18next.changeLanguage(lng, () => {
+                updateContent();
+                // Clear the ingredients text box when the language changes
+                document.querySelector('input[name="ingredients"]').value = '';  // Clear the input value
+            });
+        }
+    
+        // لتغيير اللغة من الـ dropdown
+        $(document).on("click", ".lang-select", function () {
+            const lang = $(this).data("lang");
+            changeLng(lang);  // Change language and clear the input
+        });
+    </script>
+    
+    
+    <script>
+        // Function to return language value
+        function getLanguageValue() {
+        return i18next.language === 'ar' ? 3 : i18next.language === 'en' ? 4 : 0;
+        }
+
+        // Before submitting the form, set the value in a hidden input
+        document.querySelector('form').addEventListener('submit', function () {
+        document.getElementById('language_value').value = getLanguageValue();
+        });
+
+
+    </script>
+      
+ 
+
+
+      
+    <!-- translation end -->
+
+
+
+
+
+
+
+
+    <!-- js -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
