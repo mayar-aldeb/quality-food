@@ -2,7 +2,7 @@
   "name": "FoodGuard Ai",
   "short_name": "FoodGuard",
   "id": "/quality-food/",
-  "start_url": "/quality-food/templates/index.html",  
+  "start_url": "index.html",  
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#fdfdfd",
