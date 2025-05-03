@@ -1,4 +1,33 @@
 {
+  "name": "FoodGuard Ai",
+  "short_name": "FoodGuard",
+  "id": "/quality-food/",
+  "start_url": "/quality-food/",
+  "display": "standalone",
   "theme_color": "#ffffff",
-  "background_color": "#fbfbfb"
+  "background_color": "#fdfdfd",
+  "description": "An intelligent application for evaluating food quality and calculating calories.",
+  "categories": [
+    "fitness",
+    "food",
+    "health",
+    "lifestyle",
+    "news",
+    "shopping",
+    "sports"
+  ],
+  "icons": [
+    {
+      "src": "https://mayar-aldeb.github.io/quality-food/templates/assets/img/logo/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://mayar-aldeb.github.io/quality-food/templates/assets/img/logo/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "dir": "ltr",
+  "lang": "en"
 }
