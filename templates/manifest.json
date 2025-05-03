@@ -18,12 +18,12 @@
   ],
   "icons": [
     {
-      "src": "/assets/img/logo/favicon.png",
+      "src": "assets/img/logo/favicon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/assets/img/logo/favicon.png",
+      "src": "assets/img/logo/favicon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
